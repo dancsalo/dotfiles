@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "npm is required to install Pi packages globally. Skipping Pi package installation."
+  exit 0
+fi
+
+echo "Installing Pi packages globally..."
+npm install -g \
+  @ayulab/pi-rewind \
+  @hypabolic/pi-hypa \
+  @narumitw/pi-goal \
+  rpiv-todo \
+  @pandi-coding-agent/pandi-worktree

@@ -28,6 +28,8 @@ ln -isn $(readlink -f claude/skills/standup) ~/.claude/skills/standup
 ln -isn $(readlink -f claude/skills/walkthrough) ~/.claude/skills/walkthrough
 ln -isn $(readlink -f claude/skills/fix-all) ~/.claude/skills/fix-all
 
+./bin/install-pi
+
 cp -i $(readlink -f zshrc) ~/.zshrc
 
 read -p "Your Name for Git Commits: " git_name

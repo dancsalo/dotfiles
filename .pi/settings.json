@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "npm:@ayulab/pi-rewind",
+    "npm:@hypabolic/pi-hypa",
+    "npm:@narumitw/pi-goal",
+    "npm:rpiv-todo",
+    "npm:@pandi-coding-agent/pandi-worktree"
+  ]
+}
