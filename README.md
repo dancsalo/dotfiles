@@ -18,10 +18,10 @@ Before running `bin/install`, install the apps and command-line tools that the i
   ```
 
 - Optional terminal apps whose configs are included here, such as [Ghostty](https://ghostty.org/), WezTerm, and Kitty.
-- Optional tools used by shell helpers, such as `fzf`:
+- Optional tools used by shell helpers, such as `fzf` and `ripgrep`:
 
   ```sh
-  brew install fzf
+  brew install fzf ripgrep
   ```
 
 After installing Starship, open a new terminal window or run `exec zsh` so `.zshrc` can initialize the prompt.
