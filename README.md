@@ -36,10 +36,10 @@ Required and optional tools include:
   brew install --cask nikitabobko/tap/aerospace
   ```
 
-- Optional tools used by shell helpers, such as `fzf`, `ripgrep`, [Atuin](https://atuin.sh/) for searchable shell history, `jp` for inspecting JSON, and `yq` for inspecting YAML:
+- Optional tools used by shell helpers, such as `fzf`, `ripgrep`, [Atuin](https://atuin.sh/) for searchable shell history, `jp` for inspecting JSON, `yq` for inspecting YAML, and `tmux`:
 
   ```sh
-  brew install fzf ripgrep atuin jp yq
+  brew install fzf ripgrep atuin jp yq tmux
   ```
 
 After installing Starship or Atuin, open a new terminal window or run `exec zsh` so `.zshrc` can initialize them. Atuin adds searchable history on `Ctrl-r`.

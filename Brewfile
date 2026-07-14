@@ -10,6 +10,7 @@ brew "jp"
 brew "jq"
 brew "ripgrep"
 brew "starship"
+brew "tmux"
 brew "yq"
 
 cask "ghostty"
