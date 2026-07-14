@@ -157,7 +157,6 @@ To remove the dotfile configs, run the following commands. Be certain to double 
 unlink ~/.bin
 unlink ~/.gitignore
 unlink ~/.gitconfig
-unlink ~/.gemrc
 unlink ~/.gvimrc
 unlink ~/.irbrc
 unlink ~/.vim

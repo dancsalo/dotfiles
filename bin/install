@@ -1,6 +1,5 @@
 #!/bin/sh
 
-ln -isn $(readlink -f gemrc) ~/.gemrc
 ln -isn $(readlink -f gitconfig) ~/.gitconfig
 ln -isn $(readlink -f gitignore) ~/.gitignore
 ln -isn $(readlink -f irbrc) ~/.irbrc
