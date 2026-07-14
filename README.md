@@ -26,13 +26,13 @@ Before running `bin/install`, install the apps and command-line tools that the i
   brew install --cask nikitabobko/tap/aerospace
   ```
 
-- Optional tools used by shell helpers, such as `fzf` and `ripgrep`:
+- Optional tools used by shell helpers, such as `fzf`, `ripgrep`, and [Atuin](https://atuin.sh/) for searchable shell history:
 
   ```sh
-  brew install fzf ripgrep
+  brew install fzf ripgrep atuin
   ```
 
-After installing Starship, open a new terminal window or run `exec zsh` so `.zshrc` can initialize the prompt.
+After installing Starship or Atuin, open a new terminal window or run `exec zsh` so `.zshrc` can initialize them. Atuin adds searchable history on `Ctrl-r`.
 
 
 ## Installation
