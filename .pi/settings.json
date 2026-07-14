@@ -4,6 +4,8 @@
     "npm:pi-web-access",
     "npm:pi-mcp-adapter",
     "npm:rpiv-todo",
-    "npm:@quintinshaw/pi-dynamic-workflows"
+    "npm:@quintinshaw/pi-dynamic-workflows",
+    "npm:@ayulab/pi-rewind",
+    "npm:@narumitw/pi-goal"
   ]
 }

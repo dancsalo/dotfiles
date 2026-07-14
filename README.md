@@ -55,6 +55,8 @@ pi install -l --approve npm:pi-web-access
 pi install -l --approve npm:pi-mcp-adapter
 pi install -l --approve npm:rpiv-todo
 pi install -l --approve npm:@quintinshaw/pi-dynamic-workflows
+pi install -l --approve npm:@ayulab/pi-rewind
+pi install -l --approve npm:@narumitw/pi-goal
 ```
 
 
