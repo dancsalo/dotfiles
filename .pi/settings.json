@@ -1,0 +1,9 @@
+{
+  "packages": [
+    "npm:@hypabolic/pi-hypa",
+    "npm:pi-web-access",
+    "npm:pi-mcp-adapter",
+    "npm:rpiv-todo",
+    "npm:@quintinshaw/pi-dynamic-workflows"
+  ]
+}

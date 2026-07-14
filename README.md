@@ -45,6 +45,19 @@ Required and optional tools include:
 After installing Starship or Atuin, open a new terminal window or run `exec zsh` so `.zshrc` can initialize them. Atuin adds searchable history on `Ctrl-r`.
 
 
+## Pi configuration
+
+This repo includes project-local Pi configuration in `.pi/settings.json`. When the project is trusted, Pi installs the configured packages automatically. To install them manually, run:
+
+```sh
+pi install -l --approve npm:@hypabolic/pi-hypa
+pi install -l --approve npm:pi-web-access
+pi install -l --approve npm:pi-mcp-adapter
+pi install -l --approve npm:rpiv-todo
+pi install -l --approve npm:@quintinshaw/pi-dynamic-workflows
+```
+
+
 ## Installation
 
 Run the `bin/install` command to copy files over. It will prompt you before replacing if the files already exist.
