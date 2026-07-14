@@ -9,7 +9,13 @@ For an older version of the original repo that uses [Oh My Zsh](https://github.c
 
 ## Prerequisites
 
-Before running `bin/install`, install the apps and command-line tools that the installer does not manage:
+Before running `bin/install`, install the apps and command-line tools that the installer does not manage. Agents can reference the included `Brewfile` for the full Homebrew dependency list, or install everything with:
+
+```sh
+brew bundle --file Brewfile
+```
+
+Required and optional tools include:
 
 - [Homebrew](https://brew.sh/) for installing command-line tools on macOS.
 - [Zsh](https://www.zsh.org/) as your login shell.
@@ -19,7 +25,11 @@ Before running `bin/install`, install the apps and command-line tools that the i
   brew install starship
   ```
 
-- Optional terminal apps whose configs are included here, such as [Ghostty](https://ghostty.org/), WezTerm, and Kitty.
+- [Ghostty](https://ghostty.org/) as the terminal app:
+
+  ```sh
+  brew install --cask ghostty
+  ```
 - [AeroSpace](https://github.com/nikitabobko/AeroSpace) if you want to use the included tiling window manager config:
 
   ```sh
