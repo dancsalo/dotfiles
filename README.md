@@ -5,6 +5,28 @@ These are config files to set up Mac OS X command line the way I like it using [
 For an older version that uses [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), check out [this branch](https://github.com/ryanb/dotfiles/tree/oh-my-zsh).
 
 
+## Prerequisites
+
+Before running `bin/install`, install the apps and command-line tools that the installer does not manage:
+
+- [Homebrew](https://brew.sh/) for installing command-line tools on macOS.
+- [Zsh](https://www.zsh.org/) as your login shell.
+- [Starship](https://starship.rs/) for the shell prompt:
+
+  ```sh
+  brew install starship
+  ```
+
+- Optional terminal apps whose configs are included here, such as [Ghostty](https://ghostty.org/), WezTerm, and Kitty.
+- Optional tools used by shell helpers, such as `fzf`:
+
+  ```sh
+  brew install fzf
+  ```
+
+After installing Starship, open a new terminal window or run `exec zsh` so `.zshrc` can initialize the prompt.
+
+
 ## Installation
 
 Run the `bin/install` command to copy files over. It will prompt you before replacing if the files already exist.

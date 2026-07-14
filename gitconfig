@@ -29,3 +29,9 @@
 	conflictstyle = diff3
 [sequence]
 	editor = git-rebase-editor
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

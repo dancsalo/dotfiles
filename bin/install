@@ -1,31 +1,34 @@
 #!/bin/sh
 
-ln -is $(readlink -f gemrc) ~/.gemrc
-ln -is $(readlink -f gitconfig) ~/.gitconfig
-ln -is $(readlink -f gitignore) ~/.gitignore
-ln -is $(readlink -f irbrc) ~/.irbrc
-ln -is $(readlink -f plugins) ~/.zsh-plugins
-ln -is $(readlink -f git-hooks) ~/.git-hooks
+ln -isn $(readlink -f gemrc) ~/.gemrc
+ln -isn $(readlink -f gitconfig) ~/.gitconfig
+ln -isn $(readlink -f gitignore) ~/.gitignore
+ln -isn $(readlink -f irbrc) ~/.irbrc
+ln -isn $(readlink -f plugins) ~/.zsh-plugins
+ln -isn $(readlink -f git-hooks) ~/.git-hooks
 
-ln -is $(readlink -f bin/git-commit-prefix) ~/.bin/git-commit-prefix
-ln -is $(readlink -f bin/git-rebase-editor) ~/.bin/git-rebase-editor
+mkdir -p ~/.bin
+ln -isn $(readlink -f bin/git-commit-prefix) ~/.bin/git-commit-prefix
+ln -isn $(readlink -f bin/git-rebase-editor) ~/.bin/git-rebase-editor
 
-ln -is $(readlink -f wezterm) ~/.config/wezterm
-ln -is $(readlink -f ghostty) ~/.config/ghostty
-ln -is $(readlink -f kitty) ~/.config/kitty
-ln -is $(readlink -f aerospace) ~/.config/aerospace
+mkdir -p ~/.config
+ln -isn $(readlink -f starship.toml) ~/.config/starship.toml
+ln -isn $(readlink -f wezterm) ~/.config/wezterm
+ln -isn $(readlink -f ghostty) ~/.config/ghostty
+ln -isn $(readlink -f kitty) ~/.config/kitty
+ln -isn $(readlink -f aerospace) ~/.config/aerospace
 
 mkdir -p ~/.claude/skills
-ln -is $(readlink -f claude/skills/dependabot-prs) ~/.claude/skills/dependabot-prs
-ln -is $(readlink -f claude/skills/gfix) ~/.claude/skills/gfix
-ln -is $(readlink -f claude/skills/pr-feedback) ~/.claude/skills/pr-feedback
-ln -is $(readlink -f claude/skills/pr-pending-feedback) ~/.claude/skills/pr-pending-feedback
-ln -is $(readlink -f claude/skills/rebase) ~/.claude/skills/rebase
-ln -is $(readlink -f claude/skills/remote-diff) ~/.claude/skills/remote-diff
-ln -is $(readlink -f claude/skills/review-queue) ~/.claude/skills/review-queue
-ln -is $(readlink -f claude/skills/standup) ~/.claude/skills/standup
-ln -is $(readlink -f claude/skills/walkthrough) ~/.claude/skills/walkthrough
-ln -is $(readlink -f claude/skills/fix-all) ~/.claude/skills/fix-all
+ln -isn $(readlink -f claude/skills/dependabot-prs) ~/.claude/skills/dependabot-prs
+ln -isn $(readlink -f claude/skills/gfix) ~/.claude/skills/gfix
+ln -isn $(readlink -f claude/skills/pr-feedback) ~/.claude/skills/pr-feedback
+ln -isn $(readlink -f claude/skills/pr-pending-feedback) ~/.claude/skills/pr-pending-feedback
+ln -isn $(readlink -f claude/skills/rebase) ~/.claude/skills/rebase
+ln -isn $(readlink -f claude/skills/remote-diff) ~/.claude/skills/remote-diff
+ln -isn $(readlink -f claude/skills/review-queue) ~/.claude/skills/review-queue
+ln -isn $(readlink -f claude/skills/standup) ~/.claude/skills/standup
+ln -isn $(readlink -f claude/skills/walkthrough) ~/.claude/skills/walkthrough
+ln -isn $(readlink -f claude/skills/fix-all) ~/.claude/skills/fix-all
 
 cp -i $(readlink -f zshrc) ~/.zshrc
 

@@ -7,3 +7,7 @@ source ~/.zsh-plugins/bundler.zsh
 source ~/.zsh-plugins/rails.zsh
 source ~/.zsh-plugins/wezterm.zsh
 source ~/.zsh-plugins/rbates.zsh
+
+if command -v starship >/dev/null 2>&1; then
+  eval "$(starship init zsh)"
+fi
