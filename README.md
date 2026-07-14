@@ -158,7 +158,6 @@ unlink ~/.bin
 unlink ~/.gitignore
 unlink ~/.gitconfig
 unlink ~/.gvimrc
-unlink ~/.irbrc
 unlink ~/.vim
 unlink ~/.vimrc
 rm ~/.zshrc # careful here

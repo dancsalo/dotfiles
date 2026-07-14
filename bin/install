@@ -2,7 +2,6 @@
 
 ln -isn $(readlink -f gitconfig) ~/.gitconfig
 ln -isn $(readlink -f gitignore) ~/.gitignore
-ln -isn $(readlink -f irbrc) ~/.irbrc
 ln -isn $(readlink -f plugins) ~/.zsh-plugins
 ln -isn $(readlink -f git-hooks) ~/.git-hooks
 
