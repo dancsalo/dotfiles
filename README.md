@@ -36,13 +36,28 @@ Required and optional tools include:
   brew install --cask nikitabobko/tap/aerospace
   ```
 
-- Optional tools used by shell helpers, such as `fzf`, `ripgrep`, [Atuin](https://atuin.sh/) for searchable shell history, `jp` for inspecting JSON, and `yq` for inspecting YAML:
+- Optional tools used by shell helpers, such as `fzf`, `ripgrep`, [Atuin](https://atuin.sh/) for searchable shell history, `jp` for inspecting JSON, `yq` for inspecting YAML, and `tmux`:
 
   ```sh
-  brew install fzf ripgrep atuin jp yq
+  brew install fzf ripgrep atuin jp yq tmux
   ```
 
 After installing Starship or Atuin, open a new terminal window or run `exec zsh` so `.zshrc` can initialize them. Atuin adds searchable history on `Ctrl-r`.
+
+
+## Pi configuration
+
+This repo includes project-local Pi configuration in `.pi/settings.json`. When the project is trusted, Pi installs the configured packages automatically. To install them manually, run:
+
+```sh
+pi install -l --approve npm:@hypabolic/pi-hypa
+pi install -l --approve npm:pi-web-access
+pi install -l --approve npm:pi-mcp-adapter
+pi install -l --approve npm:rpiv-todo
+pi install -l --approve npm:@quintinshaw/pi-dynamic-workflows
+pi install -l --approve npm:@ayulab/pi-rewind
+pi install -l --approve npm:@narumitw/pi-goal
+```
 
 
 ## Installation
@@ -62,28 +77,15 @@ Feel free to customize the .zshrc file to match your preference.
 
 ## Features
 
-I normally place all of my coding projects in ~/code, so this directory can easily be accessed (and tab completed) with the "c" command.
-
-```sh
-c railsca<tab>
-```
-
-If you don't specify an argument it will open `fzf` allowing you to fuzzy-find code directories. You can add directories to this with CODE_PATH. Just ensure the first one is the base one.
-
-```sh
-# in .zshrc
-export CODE_PATH="$HOME/code:$HOME/code/railscasts-episodes"
-```
-
-There is also an "h" command which behaves similar, but acts on the home path.
-
-```sh
-h doc<tab>
-```
-
-If you're using git, you'll notice the current branch name shows up in the prompt while in a git repository.
-
-Use `gw` to switch branches with `fzf`. If the branch is checked out in a worktree, it will `cd` there instead.
+- Zsh configuration with custom git helpers.
+- Starship prompt configuration.
+- Atuin searchable shell history on `Ctrl-r`.
+- Ghostty terminal configuration.
+- AeroSpace tiling window manager configuration.
+- tmux configuration.
+- `fzf`-powered git branch switching with `gw`.
+- JSON and YAML inspection tools via `jp` and `yq`.
+- Project-local Pi package configuration.
 
 
 ## Claude Code
@@ -155,9 +157,7 @@ To remove the dotfile configs, run the following commands. Be certain to double 
 unlink ~/.bin
 unlink ~/.gitignore
 unlink ~/.gitconfig
-unlink ~/.gemrc
 unlink ~/.gvimrc
-unlink ~/.irbrc
 unlink ~/.vim
 unlink ~/.vimrc
 rm ~/.zshrc # careful here
