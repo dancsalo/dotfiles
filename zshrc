@@ -8,6 +8,14 @@ source ~/.zsh-plugins/rails.zsh
 source ~/.zsh-plugins/wezterm.zsh
 source ~/.zsh-plugins/rbates.zsh
 
+if command -v jp >/dev/null 2>&1; then
+  alias jsonplot="jp"
+fi
+
+if command -v yq >/dev/null 2>&1; then
+  alias yaml="yq"
+fi
+
 if command -v atuin >/dev/null 2>&1; then
   eval "$(atuin init zsh)"
 fi
