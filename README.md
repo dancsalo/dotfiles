@@ -1,8 +1,10 @@
-# Ryan Bates Dot Files
+# Salo's Dot Files
 
 These are config files to set up Mac OS X command line the way I like it using [Zsh](https://www.zsh.org).
 
-For an older version that uses [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), check out [this branch](https://github.com/ryanb/dotfiles/tree/oh-my-zsh).
+This repo was originally forked from [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles).
+
+For an older version of the original repo that uses [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), check out [this branch](https://github.com/ryanb/dotfiles/tree/oh-my-zsh).
 
 
 ## Prerequisites
