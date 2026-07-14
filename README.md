@@ -1,13 +1,21 @@
-# Ryan Bates Dot Files
+# Salo's Dot Files
 
 These are config files to set up Mac OS X command line the way I like it using [Zsh](https://www.zsh.org).
 
-For an older version that uses [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), check out [this branch](https://github.com/ryanb/dotfiles/tree/oh-my-zsh).
+This repo was originally forked from [Ryan Bates' dotfiles](https://github.com/ryanb/dotfiles).
+
+For an older version of the original repo that uses [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), check out [this branch](https://github.com/ryanb/dotfiles/tree/oh-my-zsh).
 
 
 ## Prerequisites
 
-Before running `bin/install`, install the apps and command-line tools that the installer does not manage:
+Before running `bin/install`, install the apps and command-line tools that the installer does not manage. Agents can reference the included `Brewfile` for the full Homebrew dependency list, or install everything with:
+
+```sh
+brew bundle --file Brewfile
+```
+
+Required and optional tools include:
 
 - [Homebrew](https://brew.sh/) for installing command-line tools on macOS.
 - [Zsh](https://www.zsh.org/) as your login shell.
@@ -17,14 +25,24 @@ Before running `bin/install`, install the apps and command-line tools that the i
   brew install starship
   ```
 
-- Optional terminal apps whose configs are included here, such as [Ghostty](https://ghostty.org/), WezTerm, and Kitty.
-- Optional tools used by shell helpers, such as `fzf` and `ripgrep`:
+- [Ghostty](https://ghostty.org/) as the terminal app:
 
   ```sh
-  brew install fzf ripgrep
+  brew install --cask ghostty
+  ```
+- [AeroSpace](https://github.com/nikitabobko/AeroSpace) if you want to use the included tiling window manager config:
+
+  ```sh
+  brew install --cask nikitabobko/tap/aerospace
   ```
 
-After installing Starship, open a new terminal window or run `exec zsh` so `.zshrc` can initialize the prompt.
+- Optional tools used by shell helpers, such as `fzf`, `ripgrep`, [Atuin](https://atuin.sh/) for searchable shell history, `jp` for inspecting JSON, and `yq` for inspecting YAML:
+
+  ```sh
+  brew install fzf ripgrep atuin jp yq
+  ```
+
+After installing Starship or Atuin, open a new terminal window or run `exec zsh` so `.zshrc` can initialize them. Atuin adds searchable history on `Ctrl-r`.
 
 
 ## Installation

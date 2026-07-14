@@ -13,9 +13,7 @@ ln -isn $(readlink -f bin/git-rebase-editor) ~/.bin/git-rebase-editor
 
 mkdir -p ~/.config
 ln -isn $(readlink -f starship.toml) ~/.config/starship.toml
-ln -isn $(readlink -f wezterm) ~/.config/wezterm
 ln -isn $(readlink -f ghostty) ~/.config/ghostty
-ln -isn $(readlink -f kitty) ~/.config/kitty
 ln -isn $(readlink -f aerospace) ~/.config/aerospace
 
 mkdir -p ~/.claude/skills
