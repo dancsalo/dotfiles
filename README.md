@@ -18,6 +18,12 @@ Before running `bin/install`, install the apps and command-line tools that the i
   ```
 
 - Optional terminal apps whose configs are included here, such as [Ghostty](https://ghostty.org/), WezTerm, and Kitty.
+- [AeroSpace](https://github.com/nikitabobko/AeroSpace) if you want to use the included tiling window manager config:
+
+  ```sh
+  brew install --cask nikitabobko/tap/aerospace
+  ```
+
 - Optional tools used by shell helpers, such as `fzf` and `ripgrep`:
 
   ```sh
