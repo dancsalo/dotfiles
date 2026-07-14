@@ -77,28 +77,15 @@ Feel free to customize the .zshrc file to match your preference.
 
 ## Features
 
-I normally place all of my coding projects in ~/code, so this directory can easily be accessed (and tab completed) with the "c" command.
-
-```sh
-c railsca<tab>
-```
-
-If you don't specify an argument it will open `fzf` allowing you to fuzzy-find code directories. You can add directories to this with CODE_PATH. Just ensure the first one is the base one.
-
-```sh
-# in .zshrc
-export CODE_PATH="$HOME/code:$HOME/code/railscasts-episodes"
-```
-
-There is also an "h" command which behaves similar, but acts on the home path.
-
-```sh
-h doc<tab>
-```
-
-If you're using git, you'll notice the current branch name shows up in the prompt while in a git repository.
-
-Use `gw` to switch branches with `fzf`. If the branch is checked out in a worktree, it will `cd` there instead.
+- Zsh configuration with custom git helpers.
+- Starship prompt configuration.
+- Atuin searchable shell history on `Ctrl-r`.
+- Ghostty terminal configuration.
+- AeroSpace tiling window manager configuration.
+- tmux configuration.
+- `fzf`-powered git branch switching with `gw`.
+- JSON and YAML inspection tools via `jp` and `yq`.
+- Project-local Pi package configuration.
 
 
 ## Claude Code
